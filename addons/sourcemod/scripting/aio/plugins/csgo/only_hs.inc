@@ -14,7 +14,8 @@
 //***********************************//
 //*************DEFINE****************//
 //***********************************//
-#define TAG_ONLY_HS_CSGO "[AIO ONLY HS] - "
+#define TAG_ONLY_HS_CSGO 				"[AIO ONLY HS] - "
+#define PLUGIN_VERSION_ONLY_HS_CSGO		"1.0.0"
 
 
 //***********************************//
@@ -34,7 +35,7 @@ new bool:B_active_only_hs_csgo_dev				= false;
 /***********************************************************/
 public OnPluginStartOnlyHsCsgo()
 {
-	CreateConVar("aio_only_hs_version", PLUGIN_VERSION, "Version", CVARS);
+	CreateConVar("aio_only_hs_version", PLUGIN_VERSION_ONLY_HS_CSGO, "Version", CVARS);
 	
 	cvar_active_only_hs_csgo 					= CreateConVar("active_only_hs_csgo",  				"0", 					"Enable/Disable Only Hs", 			DEFAULT_FLAGS, 		true, 0.0, 		true, 1.0);
 	cvar_active_only_hs_csgo_dev				= CreateConVar("active_only_hs_csgo_dev", 			"0", 					"Enable/Disable Only Hs Dev Mod", 	DEFAULT_FLAGS, 		true, 0.0, 		true, 1.0);
